@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>yavtechnology.com</title>
+    </head>
+    <style>
+        
+        h1{
+            color:chocolate;
+            text-align: center;
+        }
+        input{
+            text-align: left;
+           
+
+        }
+        label {
+            display:inline-block;
+            text-align:left;
+            width: 350px;
+        }
+        form{
+            width: 50vw; 
+            margin-left : 25vw;
+        }
+        button{
+            background-color:chocolate; 
+            color:cornsilk;width:25em;
+            text-align: center;
+        }
+     
+
+        
+       
+        </style>
+        <h1>Book a Call</h1>
+        <h3 style="text-align: center;">Book a call slot and our representative will call you within one hour of selected time</h3>
+        <hr>
+    
+        <form onsubmit="savetolocalstorage(event)">
+            <fieldset style="text-align: center;">
+              <br>
+              <label><b>Name:</b></label><br>
+              <input type="text" id="name" name="username" placeholder='Enter your name...' required size=50><br><br>
+              <label><b>Email:</b></label><br>
+              <input type="mail" id="email" name="email" placeholder='Enter your Email Id...'required size=50><br><br>
+              <label><b>Phone:</b></label><br>
+              <input type="tel" id="phone" name="phone" placeholder='Enter your Contact Number...'required size=50><br><br>
+              <label><b>Time for call:</b></label><br>
+              <input type="datetime-local" id="time" name="time"size=100 style="width:25em;"><br><br>
+              <button><b>GET CALL</b></button>
+
+
+            </fieldset>
+           
+          </form>
+          <fieldset style="text-align:justify;">
+            
+            <div id="lsOutput"></div>
+            <ul id='list of users'></ul>
+           
+           
+
+        </fieldset>
+          <script src="networkStorage.js"></script>   
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script> 
+              
+              
+        
+          
+
+
+    </body>
+</html>
+
+
+  
